@@ -343,3 +343,55 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .app .time-select, .app .sound-picker, .app .player-container {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .app .time-select button {
+    color: white;
+    background: none;
+    border: 2px solid white;
+    transition: all 0.3s ease; }
+    .app .time-select button:hover {
+      color: #333;
+      background: white; }
+  .app .sound-picker button {
+    border: none;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 30px; }
+    .app .sound-picker button img {
+      height: 100%; }
+    .app .sound-picker button:nth-child(1) {
+      background: #4972a1; }
+    .app .sound-picker button:nth-child(2) {
+      background: #a14f49; }
+  .app .player-container {
+    position: relative; }
+    .app .player-container svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none; }
+  .app .time-display {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px; }
+  .app video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10; }
