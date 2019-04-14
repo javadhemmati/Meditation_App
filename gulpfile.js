@@ -142,6 +142,13 @@ function sound(done) {
     done();
 };
 
+// javascript
+function javascript(done) {
+    src('source/js/javascript.js')
+        .pipe(dest('build/assets/js'));
+    done();
+};
+
 
 
 
@@ -151,3 +158,4 @@ task('default', build);
 task('img', img);
 task('video', video);
 task('sound', sound);
+task('javascript', javascript);
